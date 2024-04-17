@@ -1,5 +1,6 @@
 :root{
-    --color-primary: #f4f8ff; /*fondo body*/
+    --color-primary: #f8e7cf; /*fondo body*/
+    --color-primary2:#fbd9aa; /*hover tarjetas*/
     --color-secundary: #1e3968; /*texto principal*/
     --color-tertiary: #3d63a6; /*texto secundario*/
     --color-mouse: #f5fe7b; /*fondo ratón*/
@@ -235,6 +236,8 @@ h4{
     .proyectos{
         display: flex;
         flex-direction: column;
+        gap: 1rem;
+
     }
 
     .boxs{
@@ -242,8 +245,31 @@ h4{
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        gap: 1rem;
     }
     .imgProyecto img{
-        width: 250px;
+        width: 350px;
     }
+    .boxs:hover{
+        background: var(--color-primary2);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(152, 153, 107);
+    }
+
+   /* NO FUNCIONA, HAY QUE HACER UN SCRIPT */
+
+
+    /* .gala:hover ~ .boxs{
+        opacity: 0.4;
+    }
+
+    .libreria:hover ~ .boxs{
+        opacity: 0.4;
+    }
+    .libreria:hover + .gala .boxs,
+    .libreria:hover + gala + .boxs{
+        opacity: 0.4;
+    } */
+
+ 
 

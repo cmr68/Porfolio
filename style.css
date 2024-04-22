@@ -233,6 +233,10 @@ h4{
             }
 
     /* PROYECTOS */
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
     .proyectos{
         display: flex;
         flex-direction: column;
@@ -255,21 +259,11 @@ h4{
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgb(152, 153, 107);
     }
-
-   /* NO FUNCIONA, HAY QUE HACER UN SCRIPT */
-
-
-    /* .gala:hover ~ .boxs{
-        opacity: 0.4;
-    }
-
-    .libreria:hover ~ .boxs{
-        opacity: 0.4;
-    }
-    .libreria:hover + .gala .boxs,
-    .libreria:hover + gala + .boxs{
-        opacity: 0.4;
-    } */
+  
 
  
+
+    footer{
+        height: 50px;
+    }
 

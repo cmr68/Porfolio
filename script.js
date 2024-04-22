@@ -133,3 +133,26 @@
 //     light.style.left = `${e.clientX}px`;
 //     light.style.top = `${e.clientY}px`;
 // });
+
+/*--------------------------------------------------------------*/
+/* OPACIDAD DE LOS PROYECTOS NO SELECCIONADOS Y EL SELECCIONADO */
+/*--------------------------------------------------------------*/
+
+const boxs = document.querySelectorAll('.boxs');
+
+boxs.forEach(box => {
+    const titulo = box.querySelector('.descripcionProyecto h4').innerText;
+    
+    box.addEventListener('mouseenter', () =>{
+        boxs.forEach(boxOpacity =>{
+            boxOpacity.style.opacity = '0.4';
+            box.style.opacity = '1';
+        });
+    });
+
+    box.addEventListener('mouseleave', () =>{
+        boxs.forEach(boxOpacity =>{
+            boxOpacity.style.opacity = '1';
+        });
+    })
+});

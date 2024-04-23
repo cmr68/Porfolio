@@ -1,5 +1,5 @@
 :root{
-    --color-primary: #f8e7cf; /*fondo body*/
+    --color-primary: #f8e4d1; /*fondo body*/
     --color-primary2:#fbd9aa; /*hover tarjetas*/
     --color-secundary: #1e3968; /*texto principal*/
     --color-tertiary: #3d63a6; /*texto secundario*/
@@ -41,7 +41,7 @@ svg{
 /*-------------------------------------------------*/
 /*           PAGINA INICIO PORFOLIO                */
 /*-------------------------------------------------*/
-h1, h3, h4, p, span {
+h1, h3, h4, p, a {
     color: var(--color-secundary); /* Puedes cambiar esto a tu preferencia */
 }
 .porfolio{
@@ -129,34 +129,47 @@ h4{
     .menu{
         position: relative;
         display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
     }
     .line-before-text{
         position: relative;
         display: inline-block;
-        padding-right: 70px;
-        margin-left: 10px;
+        padding-right: 50px;
     }
     .line-before-text::before{
         content: '';
         position: absolute;
         bottom: 50%;
-        width: 55px;
-        height: 2px;
-        background-color: var(--color-primary);
+        width: 40px;
+        height: 1.2px;
+        background-color: var(--color-secundary);
+        border: 0.01px solid var(--color-secundary);
         left: 0;
-        transition: width 0.3s ease, padding-right 0.3s ease;
+        top: -7px;
+        /* transition: width 0.2s ease; */
+        /* padding-right: 0.3s ease; */
     }
-    .menu:hover .line-before-text::before {
-        width: 160%; /* Ajusta el ancho al pasar el cursor para que se expanda aún más */
+    .menu2:hover .line-before-text::before {
+        width: 50px; /* Ajusta el ancho al pasar el cursor para que se expanda aún más */
     }
-    .skills{
-        font-size: 1.1em;
+    .menuOpciones{
+        font-size: 1.3em;
+        color: var(--color-secundary);
+        margin-left: 2px;
     }
-    .menu:hover .skills{
-        margin-left: 70px;
+    .menu2:hover{
+        /* margin-left: 40px; */
         font-size: 1.6em;
     }
     
+    .active-menu .line-before-text::before {
+        width: 50px; /* Ajusta el ancho al pasar el cursor para que se expanda aún más */
+    }
+    .active-menu{
+        font-size: 1.6em;
+    }
 
         
        
@@ -264,6 +277,6 @@ h4{
  
 
     footer{
-        height: 50px;
+        height: 60px;
     }
 

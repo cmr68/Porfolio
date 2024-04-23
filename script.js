@@ -156,27 +156,3 @@ boxs.forEach(box => {
         });
     })
 });
-
-/*----------------------------------------------------------------*/
-/* RESALTAR OPCIONES DEL MENU CUANDO SCROLL ESTÁ EN ESAS OPCIONES */
-/*----------------------------------------------------------------*/
-
-//funcion para saber si un elemento está en la parte superior
-const isElementAtTop = (element) => {
-    return element.getBoundingClientRect().top <= 0;
-}
-
-//funcion para resaltar el menu cuando el elemento opMenu este en la parte de arriba
-const highlightMenuOnScroll = () => {
-    const menuItems = document.querySelectorAll('.menu2');
-    const opMenuItems = document.querySelectorAll('.opMenu');
-
-    //Iterar sobre elementos opMenu
-    opMenuItems.forEach(opMenuItem => {
-        //Verificar si el elemento está en la parte superior
-        is(isElementAtTop(opMenuItem)){
-            //obtener el indice del elemento opMenu convirtiendo opMenuItems en un array
-            const index = Array.from(opMenuItems).indexOf(opMenuItem);
-        }
-    })
-}

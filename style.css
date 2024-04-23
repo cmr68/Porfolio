@@ -148,7 +148,7 @@ h4{
         border: 0.01px solid var(--color-secundary);
         left: 0;
         top: -7px;
-        /* transition: width 0.2s ease; */
+        /* transition: width 1s ease; */
         /* padding-right: 0.3s ease; */
     }
     .menu2:hover .line-before-text::before {
@@ -160,15 +160,7 @@ h4{
         margin-left: 2px;
     }
     .menu2:hover{
-        /* margin-left: 40px; */
-        font-size: 1.6em;
-    }
-    
-    .active-menu .line-before-text::before {
-        width: 50px; /* Ajusta el ancho al pasar el cursor para que se expanda aún más */
-    }
-    .active-menu{
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
 
         
